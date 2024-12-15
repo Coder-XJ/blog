@@ -13,7 +13,7 @@ hero:
       # 按钮的颜色主题，默认为 `brand`
     - theme: brand
       text: 快速阅读
-      link: /guide
+      link: /electron
     - theme: alt
       text: Gitee
       link: https://gitee.com/balabilibo
@@ -34,4 +34,3 @@ features:
     icon: 🚀
     details: 针对时下主流技术，结合自身学习掌握，总结整理，多种方式记录。
 ---
-
