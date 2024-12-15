@@ -23,12 +23,11 @@ export default defineConfig({
         // 侧边栏文本
         text: 'Electron',
         // 侧边栏子项
-        items: [],
+        items: [{ text: '进程通信', link: '/electron/ipc' }],
         // 是否折叠
         collapsed: true,
       },
     ],
-
     // 社交链接
     socialLinks: [
       { icon: 'gitee', link: 'https://gitee.com/balabilibo' },

@@ -13,7 +13,7 @@ hero:
       # 按钮的颜色主题，默认为 `brand`
     - theme: brand
       text: 快速阅读
-      link: /electron
+      link: /electron/ipc
     - theme: alt
       text: Gitee
       link: https://gitee.com/balabilibo
