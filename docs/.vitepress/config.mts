@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/blog/',
   title: '菜鸟码猿',
   description: '简单的个人笔记，记录自己的学习心得！',
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
