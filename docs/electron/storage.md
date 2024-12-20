@@ -27,19 +27,19 @@ app.getPath('userData')
 # C:\Users\username\AppData\Roaming\my-electron-app
 ```
 
-## <font style="color:#000000;">Lowdb</font>
+## Lowdb
 
 `lowdb` 是轻量级的本地 `json` 数据库
 
-<font style="color:#000000;">官网：</font>[https://github.com/typicode/lowdb](https://github.com/typicode/lowdb)
+官网：[https://github.com/typicode/lowdb](https://github.com/typicode/lowdb)
 
-### <font style="color:#000000;">安装依赖</font>
+### 安装依赖
 
 ```typescript
 pnpm i lowdb
 ```
 
-### <font style="color:#000000;">基本使用</font>
+### 基本使用
 
 ```vue
 <script setup lang="ts">
@@ -102,7 +102,7 @@ pnpm i lowdb
 }
 ```
 
-### <font style="color:#000000;">扩展Lowdb</font>
+### 扩展Lowdb
 
 使用 `lodash` 扩展 `lowdb`
 
@@ -123,7 +123,7 @@ pnpm i lodash
 </script>
 ```
 
-<font style="color:#000000;">基本使用</font>
+基本使用
 
 ```vue
 <script setup lang="ts">
@@ -216,7 +216,7 @@ pnpm i lodash
 </script>
 ```
 
-### <font style="color:#000000;">数据加密</font>
+### 数据加密
 
 ```vue
 <script setup lang="ts">
@@ -309,19 +309,19 @@ pnpm i lodash
 </script>
 ```
 
-## <font style="color:#000000;">Electron Store</font>
+## Electron Store
 
 `electron-store` 可以为 `electron` 应用或模块提供简单的数据持久化 - 保存和加载用户设置、应用状态、缓存等功能。生成的数据会默认保存在 `app.getPath('userData')` 名为 `config.json` 文件下：
 
-<font style="color:#000000;">官网：</font>[https://github.com/sindresorhus/electron-store](https://github.com/sindresorhus/electron-store)
+官网：[https://github.com/sindresorhus/electron-store](https://github.com/sindresorhus/electron-store)
 
-### <font style="color:#000000;">安装依赖</font>
+### 安装依赖
 
 ```shell
 pnpm i electron-store
 ```
 
-### <font style="color:#000000;">配置环境</font>
+### 配置环境
 
 若要在渲染进程中使用 `electron-store`，需要进行如下配置：
 
@@ -363,7 +363,7 @@ export default defineConfig({
 })
 ```
 
-### <font style="color:#000000;">基本使用</font>
+### 基本使用
 
 经过上述操作配置，就可以在渲染进程中愉快的使用 `electron-store` 啦
 
@@ -387,7 +387,7 @@ export default defineConfig({
 }
 ```
 
-<font style="color:#000000;">其他操作</font>
+其他操作
 
 ```vue
 <script setup lang="ts">
@@ -438,7 +438,7 @@ export default defineConfig({
 </script>
 ```
 
-### <font style="color:#000000;">数据加密</font>
+### 数据加密
 
 在实例化 `store` 时，添加 `encryptionKey` 属性并指定秘钥，`electron-store` 将使用 `aes-256-cbc` 加密算法对存储区进行加密
 
@@ -455,20 +455,20 @@ const store = new Store<Data>({
 })
 ```
 
-## <font style="color:#000000;">Sqlite</font>
+## Sqlite
 
 `SQLite` 是一个轻型的、嵌入式的 `SQL` 数据库引擎，其特点是自给自足、无服务器零配置、支持事务。它是在世界上部署最广泛的SQL数据库引擎。
 
 官网：[https://github.com/TryGhost/node-sqlite3](https://github.com/TryGhost/node-sqlite3)
 
-### <font style="color:#000000;">安装依赖</font>
+### 安装依赖
 
 ```shell
 pnpm i sqlite3
 pnpm i fs-extra
 ```
 
-### <font style="color:#000000;">配置环境</font>
+### 配置环境
 
 在渲染进程中使用 `sqlite3`，需要在 `vite.config.ts` 中进行如下配置：
 
@@ -504,7 +504,7 @@ export default defineConfig({
 })
 ```
 
-### <font style="color:#000000;">基本使用</font>
+### 基本使用
 
 ```vue
 <script setup lang="ts">
@@ -555,7 +555,7 @@ export default defineConfig({
 
 ![alt text](/assets/electron/image.png)
 
-<font style="color:#000000;">继续执行其他相关操作</font>
+继续执行其他相关操作
 
 ```vue
 <script setup lang="ts">
@@ -699,7 +699,7 @@ export default defineConfig({
 </script>
 ```
 
-<font style="color:#000000;">简易封装</font>
+简易封装
 
 ```vue
 <script setup lang="ts">
@@ -828,7 +828,7 @@ export default defineConfig({
 </script>
 ```
 
-### <font style="color:#000000;">Prisma</font>
+### Prisma
 
 `Prisma` 是一个现代的数据库工具包，其中的 `Prisma ORM`（Object-Relational Mapping，对象关系映射）框架具有以下特点和优势：
 
@@ -840,13 +840,13 @@ export default defineConfig({
 
 官网：[https://prisma.nodejs.cn/](https://prisma.nodejs.cn/)
 
-#### <font style="color:#000000;">安装依赖</font>
+#### 安装依赖
 
 ```shell
 pnpm i prisma 
 ```
 
-#### <font style="color:#000000;">创建模型</font>
+#### 创建模型
 
 使用 `Prisma CLI` 的 `init` 命令设置 `Prisma ORM`
 
@@ -926,7 +926,7 @@ model Post {
 }
 ```
 
-#### <font style="color:#000000;">创建数据库表</font>
+#### 创建数据库表
 
 使用 `Prisma Migrate` 运行迁移以创建数据库表
 
@@ -942,7 +942,7 @@ npx prisma migrate dev --name init
 
 ![alt text](/assets/electron/image-2.png)
 
-#### <font style="color:#000000;">配置环境</font>
+#### 配置环境
 
 如在渲染进程中使用 `prisma`，需要在 `vite.config.ts` 中进行如下配置：
 
@@ -979,7 +979,7 @@ export default defineConfig({
 })
 ```
 
-#### <font style="color:#000000;">基本使用</font>
+#### 基本使用
 
 ```vue
 <script setup lang="ts">
@@ -1083,11 +1083,11 @@ export default defineConfig({
 npx prisma studio
 ```
 
-<font style="color:#000000;">则会自动在浏览器中打开链接：</font>`http://localhost:5555`
+则会自动在浏览器中打开链接：`http://localhost:5555`
 
 ![alt text](/assets/electron/image-3.png)
 
-#### <font style="color:#000000;">动态设置路径</font>
+#### 动态设置路径
 
 一般将用户的个性化数据存储在 `app.getPath('userData')` 目录下，可以通过如下设置动态的进行文件路径
 
@@ -1119,13 +1119,13 @@ app.whenReady().then(() => {
 })
 ```
 
-## <font style="color:#000000;">浏览器技术存储</font>
+## 浏览器技术存储
 
 `Electron` 集成了 `Node` 和 `Chromium` 两大环境，因此，浏览器存储技术也适用于 `Electron`
 
 ![alt text](/assets/electron/image-4.png)
 
-### <font style="color:#000000;">Local Storage</font>
+### Local Storage
 
 `Local Storage` 可以存储的数据量也不大，各浏览器限额不同，但都不会超过 `10MB`。它只能被客户端脚本访问，不会自动随浏览器请求被发送给服务端，服务端也无权设置 `Local Storage` 的数据。它存储的数据没有过期时间，除非手动删除，不然数据会一直保存在客户端。
 
@@ -1144,7 +1144,7 @@ localStorage.removeItem('name')
 localStorage.clear()
 ```
 
-### <font style="color:#000000;">Session Storage</font>
+### Session Storage
 
 `Session Storage` 的特性大多与 `Local Storage` 相同，唯一不同的是浏览器关闭后 `Session Storage` 里的数据将被自动清空，因此Electron应用在需要保存程序运行期的临时数据时常常会用到它。
 
@@ -1163,11 +1163,11 @@ sessionStorage.removeItem('nikname')
 sessionStorage.clear()
 ```
 
-### <font style="color:#000000;">IndexedDB</font>
+### IndexedDB
 
 `IndexedDB`是一个基于 `JavaScript` 的面向对象的数据库，开发者可以用它存储大量的数据，在 `Electron` 应用内它的存储容量限制与用户的磁盘容量有关。`IndexedDB` 也只能被客户端脚本访问，不随浏览器请求被发送到服务端，服务端也无权利访问 `IndexedDB` 内的数据，它存储的数据亦无过期时间。`IndexedDB` 是非关系型数据库，不支持 `sql` 查询语句。
 
-#### <font style="color:#000000;">基本使用</font>
+#### 基本使用
 
 ```typescript
 let db: IDBDatabase
@@ -1386,19 +1386,19 @@ function getUserList() {
 }
 ```
 
-#### <font style="color:#000000;">使用Dexie</font>
+#### 使用Dexie
 
 `Dexie.js` 是一个对浏览器 `indexedDb` 的包装库，能够让开发者操作 `indexedDb` 变得更加简单和有趣
 
 官网：[https://dexie.org/](https://dexie.org/)
 
-<font style="color:#000000;">安装依赖</font>
+安装依赖
 
 ```typescript
 pnpm i dexie
 ```
 
-<font style="color:#000000;">基本使用</font>
+基本使用
 
 ```typescript
 import Dexie, { type EntityTable } from 'dexie'
@@ -1472,11 +1472,11 @@ async function delDB() {
 delDB()
 ```
 
-### <font style="color:#000000;">Web SQL</font>
+### Web SQL
 
 `WebSQL` 是一种为浏览器提供的数据库技术，它最大的特点就是使用 `SQL` 指令来操作数据。已废弃，了解即可。
 
-### <font style="color:#000000;">Cookie</font>
+### Cookie
 
 `Cookie` 用于存储少量的数据，最多不能超过 `4KB`，用来服务于客户端和服务端间的数据传输，一般情况下浏览器发起的每次请求都会携带同域下的 `Cookie` 数据，大多数时候服务端程序和客户端脚本都有访问`Cookie` 的权力。开发者可以设置数据保存的有效期，当 `Cookie` 数据超过有效期后将被浏览器自动删除。
 
