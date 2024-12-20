@@ -1083,7 +1083,7 @@ export default defineConfig({
 npx prisma studio
 ```
 
-<font style="color:#000000;">则会自动在浏览器中打开链接：</font>[http://localhost:5555](http://localhost:5555)
+<font style="color:#000000;">则会自动在浏览器中打开链接：</font>`http://localhost:5555`
 
 ![alt text](/assets/electron/image-3.png)
 
