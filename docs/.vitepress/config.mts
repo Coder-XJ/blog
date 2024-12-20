@@ -26,7 +26,10 @@ export default defineConfig({
         // 侧边栏文本
         text: 'Electron',
         // 侧边栏子项
-        items: [{ text: '进程通信', link: '/electron/ipc' }],
+        items: [
+          { text: '进程通信', link: '/electron/ipc' },
+          { text: '本地数据存储', link: '/electron/storage' },
+        ],
         // 是否折叠
         collapsed: true,
       },

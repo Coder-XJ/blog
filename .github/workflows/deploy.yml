@@ -1,10 +1,12 @@
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
-#
+# workflow 名称
 name: Deploy VitePress site to Pages
 
+# 触发 workflow 的事件
 on:
   # 在针对 `main` 分支的推送上运行。如果你
   # 使用 `master` 分支作为默认分支，请将其更改为 `master`
+  # 当 master 分支有更新，则触发工作流程
   push:
     branches: [master]
 
@@ -26,7 +28,9 @@ concurrency:
 jobs:
   # 构建工作
   build:
+    # 构建需要的虚拟机环境
     runs-on: ubuntu-latest
+    # 每个 job 的运行步骤
     steps:
       - name: Checkout
         uses: actions/checkout@v4
