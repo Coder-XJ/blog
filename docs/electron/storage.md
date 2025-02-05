@@ -27,7 +27,7 @@ app.getPath('userData')
 # C:\Users\username\AppData\Roaming\my-electron-app
 ```
 
-## Lowdb
+## 1. Lowdb
 
 `lowdb` 是轻量级的本地 `json` 数据库
 
@@ -309,7 +309,7 @@ pnpm i lodash
 </script>
 ```
 
-## Electron Store
+## 2. Electron Store
 
 `electron-store` 可以为 `electron` 应用或模块提供简单的数据持久化 - 保存和加载用户设置、应用状态、缓存等功能。生成的数据会默认保存在 `app.getPath('userData')` 名为 `config.json` 文件下：
 
@@ -455,7 +455,7 @@ const store = new Store<Data>({
 })
 ```
 
-## Sqlite
+## 3. Sqlite
 
 `SQLite` 是一个轻型的、嵌入式的 `SQL` 数据库引擎，其特点是自给自足、无服务器零配置、支持事务。它是在世界上部署最广泛的SQL数据库引擎。
 
@@ -1119,7 +1119,7 @@ app.whenReady().then(() => {
 })
 ```
 
-## 浏览器技术存储
+## 4. 浏览器技术存储
 
 `Electron` 集成了 `Node` 和 `Chromium` 两大环境，因此，浏览器存储技术也适用于 `Electron`
 
