@@ -29,6 +29,7 @@ export default defineConfig({
         items: [
           { text: '进程通信', link: '/electron/ipc' },
           { text: '本地数据存储', link: '/electron/storage' },
+          { text: 'asar文件', link: '/electron/asar' },
           { text: '奇技淫巧', link: '/electron/solution' },
         ],
         // 是否折叠

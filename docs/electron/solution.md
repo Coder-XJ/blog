@@ -70,7 +70,7 @@ app.whenReady().then(() => {
 
 `electron-builder` 依赖于打包环境，在 windows 环境下，需要借助 `docker`，具体操作如下：
 
-拉取 `electronuserland/builder`<font style="color:rgb(77, 77, 77);"> 镜像</font>
+拉取 `electronuserland/builder` 镜像
 
 ```shell
 docker pull electronuserland/builder
