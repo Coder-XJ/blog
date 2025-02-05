@@ -1,13 +1,14 @@
 ## 安装依赖
+
 ```shell
 pnpm i electron-log
 ```
 
 ## 基本配置
+
 在主进程中进行相应配置
 
 ```typescript
-
 import logger from 'electron-log/main'
 import dayjs from 'dayjs';
 // 在渲染进程中使用
@@ -32,4 +33,3 @@ logger.transports.console.format = '[{y}-{m}-{d} {h}:{i}:{s}] [{level}]{scope} {
 
 logger.info("hello") // [2024-12-10 16:52:22] [info] hello
 ```
-
