@@ -31,6 +31,7 @@ export default defineConfig({
           { text: '本地数据存储', link: '/electron/storage' },
           { text: 'asar文件', link: '/electron/asar' },
           { text: '串口通信(读取地磅数据)', link: '/electron/serialport' },
+          { text: '日志', link: '/electron/log' },
           { text: '奇技淫巧', link: '/electron/solution' },
         ],
         // 是否折叠
