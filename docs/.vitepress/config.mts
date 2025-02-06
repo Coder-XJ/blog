@@ -39,6 +39,13 @@ export default defineConfig({
         collapsed: true,
       },
       {
+        text: 'uniapp',
+        // link: '/uniapp/',
+        items: [{ text: '奇技淫巧', link: '/uniapp/' }],
+        // 是否折叠
+        collapsed: true,
+      },
+      {
         text: '随笔',
         link: '/essay/',
       },

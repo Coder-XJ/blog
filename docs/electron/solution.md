@@ -166,7 +166,7 @@ axios.defaults.adapter = require('axios/lib/adapters/http')
 
 ```typescript
 // 屏蔽控制台的安全警告
-process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = true
 ```
 
 ## 8. 主进程中使用路径别名
